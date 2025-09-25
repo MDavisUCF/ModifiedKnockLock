@@ -36,7 +36,7 @@ unsigned long inhibitUntil = 0;
 
 unsigned long lastKnockTime = 0;
 
-// Setting up locking, unlocking and timeout/reset
+// Setting up locking, unlocking and timeout/reset custom functions (See Bottom of Code)
 void lockBox();
 void unlockBox();
 void warnAndReset();
