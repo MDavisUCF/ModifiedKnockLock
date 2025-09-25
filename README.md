@@ -2,13 +2,13 @@
 This is a modified version of the Arduino Project Book's project 12 Knock Lock to replace the piezo with a tilt sensor.
 
 You will be using:
-(2) 10k ohm Resistors
-(3) 220 ohm Resistors
-(1) 100uF Capacitor
-(1) Button
-(1) Tilt Switch
-(1) Servo
-(3) LEDs (Red, Green & Yellow)
+- (2) 10k ohm Resistors
+- (3) 220 ohm Resistors
+- (1) 100uF Capacitor
+- (1) Button
+- (1) Tilt Switch
+- (1) Servo
+- (3) LEDs (Red, Green & Yellow)
 
 You will connect this project following the project book, but without the piezo. 
 
