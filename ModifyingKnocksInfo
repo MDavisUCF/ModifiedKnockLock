@@ -5,10 +5,27 @@ Adjust these for your own knock pattern
 - change the number of knocks needed to unlock
 
 What are those things?
-- <b> minLowMs <b/>
+- minLowMs
     What it is: The minimum time (in milliseconds) the tilt switch must stay LOW to count as a knock.
     Why it matters: Filters out tiny electrical noise or super-quick bounces.
 
     Typical tweak:
       Lower it (e.g., 10 ms) → more sensitive, may count micro-taps.
       Raise it (e.g., 30 ms) → less sensitive, ignores very light knocks.
+
+- maxLowMs
+    What it is: The longest time the switch can stay LOW and still be a valid knock.
+    Why it matters: Stops someone from just holding the sensor closed and getting “infinite knocks.”
+
+    Typical tweak:
+        Lower it (e.g., 600 ms) → must be a quick tap/tilt.
+        Raise it (e.g., 1500 ms) → allows a slower, longer tilt.
+
+- refractoryMs
+    What it is: The “cool-down” after a valid knock. During this window, new triggers are ignored.
+    Why it matters: Prevents one real knock from counting multiple times if the sensor bounces.
+
+    Typical tweak:
+        Lower it (e.g., 150 ms) → faster back-to-back knocks allowed.
+        Raise it (e.g., 400 ms) → requires more spacing between knocks.
+
