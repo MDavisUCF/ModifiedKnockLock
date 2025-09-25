@@ -1,0 +1,14 @@
+How can you set your own knock unlock code?
+
+Adjust these for your own knock pattern
+- change `minLowMs`, `maxLowMs`, `refractoryMs`
+- change the number of knocks needed to unlock
+
+What are those things?
+- <b> minLowMs <b/>
+    What it is: The minimum time (in milliseconds) the tilt switch must stay LOW to count as a knock.
+    Why it matters: Filters out tiny electrical noise or super-quick bounces.
+
+    Typical tweak:
+      Lower it (e.g., 10 ms) → more sensitive, may count micro-taps.
+      Raise it (e.g., 30 ms) → less sensitive, ignores very light knocks.
